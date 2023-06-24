@@ -12,7 +12,10 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/user/login',  { email, password }); // Replace with your API endpoint
+      // const response = await axios.post('http://localhost:5000/api/user/login',  { email, password }); // Replace with your API endpoint
+            const response = await axios.post('https://tangerine-stardust-9116fd.netlify.app/api/user/login',  { email, password }); // Replace with your API endpoint
+
+
       console.log(response.data); // Handle success or redirect to dashboard
       setSuccessMessage('login successful!');
      <Dashboard/>

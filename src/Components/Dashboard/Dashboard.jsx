@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Dashboard.css'
 
 const Dashboard = () => {
   const [todo, setTodo] = useState('');
@@ -12,7 +13,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
+    <div className='dashboard-todo'>
       <h2>Welcome to the Dashboard</h2>
       <div>
         <input

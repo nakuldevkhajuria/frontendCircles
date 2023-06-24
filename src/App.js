@@ -4,11 +4,11 @@ import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
 import ForgetPassword from './Components/ForgetPassword/ForgetPassword';
 import Dashboard from './Components/Dashboard/Dashboard';
-import  './App.css'
+import  './App.css';
 const App = () => {
   return (
-    <>fdf
-
+    <div className='App'>
+<h1>TO DO App</h1>
     <Register/>   
     <Login/>
   <ForgetPassword/>
@@ -22,7 +22,7 @@ const App = () => {
       </Routes>
     </Router> */}
     
-    </>
+    </div>
   
   );
 };
