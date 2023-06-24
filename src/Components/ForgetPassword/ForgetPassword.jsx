@@ -9,7 +9,7 @@ const ForgetPassword = () => {
     e.preventDefault();
     try {
       const mobile = window.location.pathname.split('/').pop(); // Get the mobile number from the URL
-      const response = await axios.put(`/api/forget-password/${mobile}`, { password: newPassword }); // Replace with your API endpoint
+      const response = await axios.put(`https://todo-backend-p60w.onrender.com/api.user/${mobile}`, { password: newPassword }); // Replace with your API endpoint
       console.log(response.data); // Handle success or redirect to login page
     } catch (error) {
       console.error(error);
