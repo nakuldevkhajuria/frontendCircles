@@ -19,8 +19,8 @@ const ForgetPassword = () => {
   return (
     <div>
       <h2>Forget Password</h2>
-      {/* <form onSubmit={handleForgetPassword}> */}
-      <form >
+      <form onSubmit={handleForgetPassword}>
+  
 
         <input type="password" placeholder="New Password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} />
         <input
