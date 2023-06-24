@@ -10,7 +10,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://todo-backend-p60w.onrender.com/api/user/register', { name, email, password, mobile }); // Replace with your API endpoint
+      const response = await axios.post('https://todo-backend-p60w.onrender.com/user/register', { name, email, password, mobile }); // Replace with your API endpoint
       console.log(response.data); // Handle success or redirect to login page
       setSuccessMessage('Registration successful!');
       setName(''); 
