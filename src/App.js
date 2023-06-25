@@ -6,22 +6,26 @@ import ForgetPassword from './Components/ForgetPassword/ForgetPassword';
 import  './App.css';
 const App = () => {
   return (
-    <div className='App'>
-<h1>TO DO App</h1>
-    <Register/>   
-    <Login/>
-  <ForgetPassword/>
+    <>
+    <h1 style={{textAlign:'center'}}>TO DO App</h1>
+     <div className='App'>
 
+<Register/>   
+<Login/>
+<ForgetPassword/>
+
+
+   {/* <Router>
+   <Routes>
+    <Route exact path="/register" component={Register} />
+    <Route exact path="/login" component={Login} />
+   <Route exact path="/forget-password/:mobile" component={ForgetPassword} />
+  </Routes>
+</Router> */}
+
+</div>
+    </>
    
-       {/* <Router>
-       <Routes>
-        <Route exact path="/register" component={Register} />
-        <Route exact path="/login" component={Login} />
-       <Route exact path="/forget-password/:mobile" component={ForgetPassword} />
-      </Routes>
-    </Router> */}
-    
-    </div>
   
   );
 };
